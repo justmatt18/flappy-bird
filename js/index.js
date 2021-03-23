@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   var score = 0;
 
   var sounds = {
-    die: "sfx_hit.mp3",
-    jump: "sfx_wing.mp3",
-    score: "sfx_point.mp3",
+    die: "../sounds/sfx_hit.mp3",
+    jump: "../sounds/sfx_wing.mp3",
+    score: "../sounds/sfx_point.mp3",
   };
 
   function startGame() {
@@ -66,12 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
         gameDisplay.removeChild(topObstacle);
       }
       if (
+        birdBottom <= 10 ||
         (obstacleLeft > 200 &&
           obstacleLeft < 280 &&
           birdLeft == 220 &&
           (birdBottom < obstacleBottom + 150 ||
-            birdBottom > obstacleBottom + gap - 200)) ||
-        (birdBottom <= 0 && !isGameOver)
+            birdBottom > obstacleBottom + gap - 200))
       ) {
         gameOver();
         clearInterval(timerId);

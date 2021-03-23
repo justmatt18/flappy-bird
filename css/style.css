@@ -36,14 +36,14 @@ body {
 }
 
 .sky {
-  background-image: url("game-bg.png");
+  background-image: url("../img/game-bg.png");
   width: 500px;
   height: 580px;
   position: absolute;
 }
 
 .ground {
-  background-image: url("ground-bg.png");
+  background-image: url("../img/ground-bg.png");
   width: 500px;
   height: 150px;
   position: absolute;
@@ -52,7 +52,7 @@ body {
 }
 
 .bird {
-  background-image: url("flappy-bird.png");
+  background-image: url("../img/flappy-bird.png");
   position: absolute;
   width: 60px;
   height: 45px;
@@ -61,14 +61,14 @@ body {
 }
 
 .obstacle {
-  background-image: url("pipe.png");
+  background-image: url("../img/pipe.png");
   width: 60px;
   height: 300px;
   position: absolute;
 }
 
 .topObstacle {
-  background-image: url("pipe.png");
+  background-image: url("../img/pipe.png");
   transform: rotate(180deg);
   width: 60px;
   height: 300px;
@@ -115,7 +115,7 @@ body {
   position: absolute;
   top: 580px;
   height: 150px;
-  background-image: url("ground-bg.png");
+  background-image: url("../img/ground-bg.png");
   background-repeat: repeat-x;
   animation: slideright 100s infinite linear;
   -webkit-animation: slideright 100s infinite linear;
